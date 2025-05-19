@@ -1,0 +1,188 @@
+// File location: assets\src\sass\styles
+
+@include limbo-max {
+    .header-main {
+        &.post-transparent-header {
+            position: absolute;
+            width: 100%;
+            background: transparent;
+            #primary-menu {
+                background: linear-gradient(102deg, #132051 2.22%, #000 98.66%);
+                li {
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+            label span {
+                background-color: var(--color-2);
+            }
+        }
+      }
+    .header-top {
+        display: none;
+    }
+    .header-main {
+        position: sticky;
+        top: 0;
+        background-color: #fff;
+        height: 13rem;
+    }
+    .header-main-inner {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+    }
+    .logo-wrap {
+        line-height: 0;
+        padding: 1rem 0;
+        display: flex;
+        align-items: center;
+        a {
+            height: 75%;
+            img {
+                height: 100%;
+                object-fit: contain;
+                object-position: left;
+            }
+        }
+    }
+    .main-navigation {
+        ul {
+            display: none;
+        }
+    }
+    #primary-menu {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 13rem);
+        background: #fff;
+        background-repeat: no-repeat;
+        background-position: bottom right, center;
+        left: 0;
+        padding: 25px;
+        li {
+            a {
+                padding: 2.5rem;
+                color: var(--color-text);
+                font-size: 18px;
+                width: 100%;
+            }
+            &.current-menu-item {
+                a {
+                    opacity: 1;
+                }
+            }
+            &.menu-item-has-children {
+                a {
+                    width: calc(100% - 25px);
+                }
+            }
+            .sub-menu-trigger {
+                width: 25px;
+                transform: rotate(45deg);
+                transition: var(--theme-transition);
+            }
+            > .sub-menu {
+                width: 100%;
+                margin-left: 10px;
+                a {
+                  padding: 1rem 1.5rem;
+                }
+              }
+              &.sub-menu-open {
+                .sub-menu-trigger {
+                  transform: rotate(90deg);
+                }
+              }
+              &.menu-li-hide-desktop {
+                width: fit-content;
+                a {
+                    color: var(--color-2);
+                    font-weight: 600;
+                    border: 2px solid var(--color-2);
+                    margin: 22px 0 0 11px;
+                    padding: 2.5rem 5rem;
+                }
+              }
+        }
+        > li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+    }
+    .nav-button {
+        display: none!important;
+    }
+
+    /* Nav Trigger Start */
+
+    .menu-toggle {
+        display: none;
+      }
+      label {
+        width: 30px;
+        transition: var(--theme-transition);
+        cursor: pointer;
+        margin-right: 0;
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        -webkit-tap-highlight-color: transparent;
+        &:active, &:focus {
+            background-color: transparent;
+        }
+        span {
+            height: 3px;
+            background-color: var(--color-1);
+            margin-left: 0;
+            margin-bottom: 8px;
+            border-radius: 1px;
+            transition: var(--theme-transition);
+              &:first-child {
+                width: 22px;
+              }
+              &:nth-child(2) {
+                width: 15px;
+              }
+              &:last-child {
+                width: 30px;
+                margin-bottom: 0;
+              }
+          }
+      }
+
+      #menu_trigger:checked + label {
+        transform: rotateZ(-90deg);
+        span {
+            width: 6px;
+            height: 6px;
+            margin-left: 12px;
+            margin-bottom: 3px;
+            background-color: var(--color-2);
+            border-radius: 4px;
+          }
+      }
+
+    /* Nav Trigger End */
+    .acf-main-menu-container {
+        #primary-menu {
+        li {
+            &:last-child {
+                width: fit-content;
+                a {
+                    color: var(--color-2);
+                    font-weight: 600;
+                    border: 2px solid var(--color-2);
+                    margin: 22px 0 0 11px;
+                    padding: 2.5rem 5rem;
+                }
+            }
+        }
+        }
+    }
+}

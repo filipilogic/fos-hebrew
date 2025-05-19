@@ -1,0 +1,27 @@
+/*!
+Theme Name: iLogic
+Theme URI: https://lemon-mss.com/
+Author: Zeljko Skipic
+Author URI: https://zeljkoskipic.dev/
+Description: iLogic Theme is developed for the internal use of iLogic, Lemon MSS, and Zeljko Skipic
+Version: 1.0.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: ilogic
+
+*/
+
+/* STEFAN CSS */
+@media (max-width: 1199.5px) {
+    .hero-promise-gala .il_btn {
+  
+         padding: 1.6rem 2.9rem !important;
+    
+	}}
+
+
+@media (max-width: 797.5px) {
+  .sheba-promise-gala-countdown .il_block.il-countdown .container .il-countdown-ticker .countdown-box {
+
+    border-color:#2FB297!important;
+}}

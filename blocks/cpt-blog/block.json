@@ -1,0 +1,16 @@
+{
+    "name": "acf/cpt-blog",
+    "title": "iLogic CPT Blog",
+    "description": "A Block for displaying last three posts",
+    "category": "ilogic-category",
+    "icon": "welcome-widgets-menus",
+    "keywords": ["cpt-blog", "cpt blog", "ilogic"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "cpt-blog.php"
+    },
+    "supports": {
+		"align": false,
+		"anchor": true
+	}
+}

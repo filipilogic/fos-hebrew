@@ -1,0 +1,161 @@
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  @include md-desk-only {
+    font-size: 8px;
+  }
+  @include sm-desk-only {
+    font-size: 7px;
+  }
+  @include limbo-only {
+    font-size: 6px;
+  }
+  @include tab-only {
+    font-size: 6px;
+  }
+  @include mob-only {
+    font-size: 5px;
+  }
+  :where(.wp-block) {
+    max-width: 90%;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    line-height: var(--title-line-height);
+    margin-bottom: var(--title_margin_bottom_ld);
+    @include limbo-max {
+      margin-bottom: var(--title_margin_bottom_mt);
+    }
+  }
+}
+main {
+  max-width: 2560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.site-main, .interface-interface-skeleton__content {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Font Primary',
+  }
+  div, p, a {
+      font-family: 'Font Primary';
+  }
+  p, li {
+    margin-top: 0;
+    font-size: var(--body-size);
+  }
+  p {
+    font-size: 2rem;
+    @include lg-desk-min {
+      font-size: 1.8rem;
+    }
+    @include limbo-max {
+      font-size: 16px;
+    }
+ }
+ a {
+  font-size: 16px;
+  @include limbo-max {
+    font-size: 14px;
+  }
+ }
+h2 {
+  font-size: var(--title-size-2-ld);
+  @include tab-max {
+    font-size: var(--title-size-2-mt);
+  }
+}
+h3 {
+  font-size: var(--title-size-3-ld);
+  @include tab-max {
+    font-size: var(--title-size-3-mt);
+  }
+}
+h4 {
+  font-size: var(--title-size-4-ld);
+  @include tab-max {
+    font-size: var(--title-size-4-mt);
+  }
+}
+h5 {
+  font-size: var(--title-size-5-ld);
+  @include tab-max {
+    font-size: var(--title-size-5-mt);
+  }
+}
+h6 {
+  font-size: var(--title-size-5-ld);
+  @include tab-max {
+    font-size: var(--title-size-5-mt);
+  }
+}
+}
+.container {
+  width: var(--site-width);
+  max-width: var(--site-max-width);
+  margin: auto;
+}
+
+.custom-social-icons {
+  display: flex;
+  align-items: center;
+  margin-top: 4.8rem;
+  a:not(:last-child) {
+    margin-left: 20px;
+  }
+}
+
+.post_nav_container {
+  margin-top: 3rem;
+  @include limbo-max {
+    margin-top: 25px;
+  }
+  .post-navigation .nav-links {
+    justify-content: space-between;
+    .nav-next {
+      margin-left: auto;
+    }
+    a {
+     color: var(--color-1);
+     text-decoration: none;
+     font-size: 18px;
+     @include limbo-max {
+      font-size: 16px;
+     }
+    }
+  }
+}
+
+#backToTopButton {
+  opacity: 0;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: var(--color-2);
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  border-radius: 100px;
+  transition: var(--theme-transition);
+  @include tab-max {
+    padding: 15px;
+  }
+  img {
+    width: 20px;
+    @include tab-max {
+      width: 18px;
+    }
+  }
+}
+

@@ -1,0 +1,110 @@
+.il_agenda {
+    padding-top: var(--b-agenda-space-top-ld);
+    padding-bottom: var(--b-agenda-space-bottom-ld);
+    padding-left: var(--b-agenda-space-left-ld);
+    padding-right: var(--b-agenda-space-right-ld);
+    @include limbo-max {
+      padding-top: var(--b-agenda-space-top-mt);
+      padding-bottom: var(--b-agenda-space-bottom-mt);
+      padding-left: var(--b-agenda-space-left-mt);
+      padding-right: var(--b-agenda-space-right-mt);
+    }
+    .il_agenda_wrap {
+        .il_agenda_content {
+            overflow: hidden;
+            display: flex;
+            &:not(:last-child) {
+                margin-bottom: 3.6rem;
+                @include limbo-max {
+                    margin-bottom: 26px;
+                }
+            }
+            .il_ac_time {
+                min-width: 14rem;
+                font-size: 18px;
+                color: #09073B;
+                font-weight: 700;
+                line-height: 28px;
+                @include mob-only {
+                    font-size: 22px;
+                    padding-bottom: 0;
+                    border-bottom: 1px solid #dedede;
+                    padding-bottom: 14px;
+                }
+                @include tab-min {
+                    border-right: 1px solid #DBDBDB;
+                }
+                @include desk-min {
+                    text-align: center;
+                }
+            }
+            .il_ac_content_container {
+                @include mob-only {
+                    padding-top: 10px;
+                }
+                @include tab-only {
+                    margin-left: 20px;
+                }
+                @include limbo-only {
+                    margin-left: 20px;
+                }
+                @include desk-min {
+                    margin-left: 2.8rem;
+                }
+                .il_ac_title {
+                    font-size: 2.6rem;
+                    font-weight: 600;
+                    color: var(--color-2);
+                    margin-bottom: 20px;
+                    @include limbo-max {
+                        font-size: 20px;
+                    }
+                }
+                .il_ac_content {
+                    p {
+                        font-size: 20px;
+                        color: #09073B;                    
+                        @include limbo-max {
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .il_ac_speakers {
+                    @include desk-min {
+                        display: flex;
+                        flex-wrap: wrap;
+                    }
+                    .il_ac_speaker {
+                        @include desk-min {
+                            &:first-child {
+                                margin-right: 4.5rem;
+                            }
+                        }
+                        .il_ac_speaker_name {
+                            font-size: 22px;
+                            font-weight: 700;
+                            color: #09073B;
+                            margin-bottom: 4px;                   
+                            @include limbo-max {
+                                font-size: 20px;
+                            }
+                        }
+                        .il_ac_speaker_position {
+                            p {
+                                font-size: 18px;
+                                font-weight: 500;
+                                color: #09073B;                    
+                                @include limbo-max {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            @include mob-only {
+                flex-direction: column;
+            }
+        }
+    }
+}

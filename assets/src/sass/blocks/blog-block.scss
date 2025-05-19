@@ -1,0 +1,368 @@
+.il_block.il_blog-block-section {
+    padding-top: var(--b-blog-block-space-top-ld);
+    padding-bottom: var(--b-blog-block-space-bottom-ld);
+    padding-left: var(--b-blog-block-space-left-ld);
+    padding-right: var(--b-blog-block-space-right-ld);
+    @include limbo-max {
+      padding-top: var(--b-blog-block-space-top-mt);
+      padding-bottom: var(--b-blog-block-space-bottom-mt);
+      padding-left: var(--b-blog-block-space-left-mt);
+      padding-right: var(--b-blog-block-space-right-mt);
+    }
+
+    &.blog-carousel-disabled {
+        .il_inner_posts_container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+            @include mob-only{
+                flex-direction: column;
+            }
+            .buttons-after-blog {
+              margin-top: 5.5rem;
+              text-align: center;
+              @include limbo-max {
+                margin-top: 36px;
+                width: 100%;
+              }
+            }
+            article {
+                width: 30.5%;
+                background: #FFFFFF;
+                border-radius: 20px;
+                box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.16);
+                overflow: hidden;
+                @include mob-only {
+                    width: 100%;
+                }
+                @include limbo-only {
+                    width: 47%;
+                    &:nth-child(odd) {
+                        margin-right: 6%;
+                    }
+                }
+                @include tab-only {
+                    width: 47%;
+                    &:nth-child(odd) {
+                        margin-right: 6%;
+                    }
+                }
+                @include limbo-max{
+                    &:not(:last-of-type) {
+                        margin-bottom: 5rem;
+                    }
+                }
+                @include desk-min {
+                    &:not(:last-of-type) {
+                        margin-right: 4%;
+                    }
+                }
+                .article-container {
+                    padding: 18px 24px 36px 24px;
+                    @include limbo-max {
+                        padding: 16px 24px 28px 24px;
+                    }
+                }
+                a {
+                    text-decoration: none;
+                    display: block;
+                    img{
+                        width: 100%;
+                        height: 25rem;
+                        object-fit: cover;
+                        @include tab-max {
+                            height: 35rem;
+                        }
+                    }
+                    .entry-date {
+                        font-size: 18px;
+                        color: var(--color-3);
+                        margin-bottom: 14px;
+                        @include limbo-max {
+                            font-size: 17px;
+                            margin-bottom: 12px;
+                        }
+                    }
+                    .entry-title{
+                        color: var(--color-1);
+                        margin-bottom: 20px;
+                        font-size: 20px;
+                        font-weight: 600;
+                        @include limbo-max {
+                            font-size: 21px;
+                            margin-bottom: 18px;
+                        }
+                    }
+                    .entry-content{
+                        p {
+                            color: var(--color-text);
+                            font-size: 16px;
+                            margin-bottom: 3rem;
+                            @include limbo-max {
+                                margin-bottom: 30px;
+                            }
+                        }
+                    }
+    
+                    .entry_btn{
+                        color: var(--color-2);
+                        font-size: 20px;
+                        @include limbo-max {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.blog-carousel-enabled {
+        overflow: hidden;
+        .il_inner_posts_container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            width: 100%;
+            @include limbo-max {
+                min-width: 100vw;
+            }
+            article {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: calc(25% - 8px);
+                height: 49.4rem;
+                @include limbo-max {
+                    width: 38rem;
+                }
+                @include mob-only {
+                    width: 65%;
+                    height: 60rem;
+                }
+                margin-right: 8px;
+                a {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    text-decoration: none;
+                    padding: 4.4rem 2.4rem;
+                    @include limbo-max {
+                        padding: 5rem 3rem;
+                    }
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        position: absolute;
+                        border-radius: 20px;
+                        top: 0;
+                        left: 0;
+                    }
+                    .article-container {
+                        margin-top: auto;
+                        margin-bottom: 0;
+                        width: 100%;
+                        z-index: 2;
+                        .entry-header {
+                            .entry-title {
+                                color: #fff;
+                                font-size: 2.6rem;
+                                font-weight: 600;
+                                margin-bottom: 22px;
+                                line-height: 1.2;
+                                @include limbo-max {
+                                    font-size: 24px;
+                                }
+                            }
+                        }
+                        .entry_btn {
+                            font-size: 2rem;
+                            font-weight: 600;
+                            display: flex;
+                            align-items: center;
+                            @include limbo-max {
+                                font-size: 16px;
+                            }
+                            svg {
+                                margin-left: 15px;
+                            }
+                        }
+                    }
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        border-radius: 20px;
+                        background: linear-gradient(0deg, #2B2C6C 0%, rgba(0, 0, 0, 0.00) 100%);
+                    }
+                    &:hover:after {
+                        background: linear-gradient(0deg, rgba(43, 44, 108, 0.80) 0%, rgba(43, 44, 108, 0.56) 100%);
+                    }
+                }
+            }
+            &:after {
+                content: 'flickity';
+                display: none;
+            }
+        }
+
+        &.hp-latest-projects-section {
+            .prev-next-container {
+                display: flex;
+                position: absolute;
+                .carousel-previous-button {
+                    margin-right: 3.6rem;
+                    cursor: pointer;
+                }
+                .carousel-next-button {
+                    cursor: pointer;
+                }
+                @include tab-max {
+                    left: 0;
+                    bottom: 5rem;
+                    width: 100%;
+                    justify-content: center;
+                    img {
+                        width: 42px;
+                        height: 42px;
+                    }
+                }
+                @include limbo-min {
+                    bottom: 0;
+                    right: 0;
+                }
+            }
+            @include limbo-min {
+                .il_block_intro {
+                    position: relative;
+                }
+            }
+            .flickity-prev-next-button {
+                display: none;
+            }
+        }
+
+        &.hp-meet-our-donors-section {
+            overflow: hidden;
+            .container {
+                display: flex;
+                @include tab-max {
+                    flex-direction: column;
+                }
+                .il_block_intro {
+                    .prev-next-container {
+                        display: flex;
+                        .carousel-previous-button {
+                            margin-right: 3.6rem;
+                            margin-right: 3.6rem;
+                            cursor: pointer;
+                        }
+                        .carousel-next-button {
+                            cursor: pointer;
+                        }
+                        @include tab-max {
+                            position: absolute;
+                            left: 0;
+                            bottom: 5rem;
+                            width: 100%;
+                            justify-content: center;
+                            img {
+                                width: 42px;
+                                height: 42px;
+                            }
+                        }
+                        @include limbo-min {
+                            margin-top: 36px;
+                        }
+                    }
+                    @include limbo-min {
+                        min-width: 50rem;
+                        margin-right: 5.8rem;
+                        .intro_text {
+                            p {
+                                font-size: 2.2rem;
+                            }
+                        }
+                    }
+                }
+                .il_inner_posts_container {
+                    @include tab-max {
+                        min-width: 100vw;
+                    }
+                    @include limbo-min {
+                        min-width: 100%;
+                    }
+                    article {
+                        height: 45rem;
+                        // ovo promeniti ako ikad dodaju jedan vise story da width krece od desk min bez sm-desk-min
+                        @include sm-desk-only {
+                            width: 265px;
+                        }
+                        @include md-desk-min {
+                            width: 35rem;
+                        }
+                        @include limbo-max {
+                            width: 43rem;
+                            height: 55rem;
+                        }
+                        @include mob-only {
+                            width: 65%;
+                            height: 58rem;
+                        }
+                        margin-right: 24px;
+                        a {
+                            padding: 3.3rem;
+                            @include limbo-max {
+                                padding: 4rem;
+                            }
+                            &:before {
+                                content: '';
+                                position: absolute;
+                                width: 40px;
+                                height: 40px;
+                                top: calc(50% - 20px);
+                                left: calc(50% - 20px);
+                                border-radius: 20px;
+                                background: url('/wp-content/uploads/2023/10/Play-button.png');
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                z-index: 1;
+                            }
+                        }
+                        .article-container {
+                            .entry-header {
+                                .entry-title {
+                                    margin-bottom: 0;
+                                    line-height: 3.6rem;
+                                    @include limbo-max {
+                                        font-size: 20px;
+                                        line-height: 1.4;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .flickity-prev-next-button {
+                display: none;
+            }
+        }
+        &.no-play-button {
+            .container {
+                .il_inner_posts_container {
+                    article {
+                        a {
+                            &:before {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
