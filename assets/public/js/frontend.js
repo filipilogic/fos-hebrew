@@ -67,7 +67,8 @@ jQuery(document).ready(function ($) {
 
   // Store selected filters per block
   window.cptFilters = window.cptFilters || {};
-  $(document).on('click', '.cpt-filter-term', function () {
+  $(document).on('click', '.cpt-filter-term', function (e) {
+    e.preventDefault(); // Prevent default anchor behavior
     var $term = $(this);
     var blockId = $term.closest('[data-block-id]').data('block-id');
     var tax = $term.data('tax');

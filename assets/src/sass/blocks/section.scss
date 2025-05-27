@@ -586,6 +586,7 @@
     .intro_text {
       @include limbo-min {
         max-width: 60rem;
+        margin-left: auto;
       }
       a {
         color: var(--color-2);

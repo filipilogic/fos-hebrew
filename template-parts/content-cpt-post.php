@@ -2,9 +2,6 @@
     <a href="<?php the_permalink(); ?>">
         <?php
         $homepage_image = get_field('homepage_image', get_the_ID());
-        $event_time = get_field('event_time', get_the_ID());
-        $event_location = get_field('event_location', get_the_ID());
-        $event_date = get_field('event_date', get_the_ID());
         if ( $show_homepage_image && $homepage_image ) {
             $size = 'full';
             echo wp_get_attachment_image( $homepage_image, $size, false );
@@ -13,26 +10,12 @@
         }
         ?>
         <div class="article-container">
-            <?php 
-			if( $show_date ) { ?>
+            <?php if( $show_date ) { ?>
                 <div class="entry-date"><?php echo get_the_date(); ?></div>
             <?php } ?>
             <header class="entry-header">
                 <h3 class="entry-title"><?php the_title(); ?></h3>
             </header>
-            <?php if ( $event_time || $event_location || $event_date ) : ?>
-                <div class="event-details">
-                    <?php if ( $event_time ) : ?>
-                        <p class="event-time"><?php echo $event_time; ?><span class="sep-event-time">|</span></p>
-                    <?php endif; ?>
-                    <?php if ( $event_location ) : ?>
-                        <p class="event-location"><?php echo $event_location; ?><span class="sep-event-location">|</span></p>
-                    <?php endif; ?>
-                    <?php if ( $event_date ) : ?>
-                        <p class="event-date"><?php echo $event_date; ?></p>
-                    <?php endif; ?>
-                </div>
-            <?php endif; ?>
             <?php if ( empty( $carousel) ) { ?>
                 <div class="entry-content">
                     <p>

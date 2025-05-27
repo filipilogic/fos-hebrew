@@ -159,7 +159,7 @@
   }
   .il_columns_inner {
     .column {
-      &:nth-child(1) {
+      &:nth-child(2) {
         @include desk-min {
           .il_col_text {
             p {
@@ -168,7 +168,7 @@
           }
         }
       }
-      &:nth-child(2) {
+      &:nth-child(1) {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -188,6 +188,9 @@
           }
         }
       }
+    }
+    @include limbo-max {
+      flex-direction: column-reverse;
     }
   }
 }

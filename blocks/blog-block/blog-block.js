@@ -4,7 +4,7 @@ jQuery(document).ready(function ($) {
 
 	$('.il_inner_posts_container').flickity({
 		// options
-		cellAlign: 'left',
+		cellAlign: 'right',
 		contain: true,
 		pageDots: false,
 		prevNextButtons: true,
@@ -12,7 +12,8 @@ jQuery(document).ready(function ($) {
 		wrapAround: true,
 		autoPlay: false,
 		selectedAttraction: 0.009,
-		watchCSS: true
+		watchCSS: true,
+		rightToLeft: true
 		});
 
 	$('.carousel-previous-button').click(function() {

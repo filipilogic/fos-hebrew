@@ -125,6 +125,7 @@
             width: 100%;
             @include limbo-max {
                 min-width: 100vw;
+                margin-left: calc(-100vw + 100%);
             }
             article {
                 display: flex;
@@ -139,7 +140,7 @@
                     width: 65%;
                     height: 60rem;
                 }
-                margin-right: 8px;
+                margin-left: 8px;
                 a {
                     width: 100%;
                     height: 100%;
@@ -170,6 +171,7 @@
                                 font-weight: 600;
                                 margin-bottom: 22px;
                                 line-height: 1.2;
+                                direction: rtl;
                                 @include limbo-max {
                                     font-size: 24px;
                                 }
@@ -179,12 +181,14 @@
                             font-size: 2rem;
                             font-weight: 600;
                             display: flex;
+                            flex-direction: row-reverse;
                             align-items: center;
                             @include limbo-max {
                                 font-size: 16px;
                             }
                             svg {
-                                margin-left: 15px;
+                                margin-right: 15px;
+                                transform: rotate(180deg);
                             }
                         }
                     }
@@ -212,6 +216,7 @@
         &.hp-latest-projects-section {
             .prev-next-container {
                 display: flex;
+                flex-direction: row-reverse;
                 position: absolute;
                 .carousel-previous-button {
                     margin-right: 3.6rem;
@@ -232,7 +237,7 @@
                 }
                 @include limbo-min {
                     bottom: 0;
-                    right: 0;
+                    left: 0;
                 }
             }
             @include limbo-min {
@@ -249,14 +254,16 @@
             overflow: hidden;
             .container {
                 display: flex;
+                flex-direction: row-reverse;
                 @include tab-max {
                     flex-direction: column;
                 }
                 .il_block_intro {
                     .prev-next-container {
                         display: flex;
+                        flex-direction: row-reverse;
+                        justify-content: flex-end;
                         .carousel-previous-button {
-                            margin-right: 3.6rem;
                             margin-right: 3.6rem;
                             cursor: pointer;
                         }
@@ -280,7 +287,7 @@
                     }
                     @include limbo-min {
                         min-width: 50rem;
-                        margin-right: 5.8rem;
+                        margin-left: 5.8rem;
                         .intro_text {
                             p {
                                 font-size: 2.2rem;
