@@ -380,35 +380,35 @@ endif;
 							decoding="async" 
 							width="1920" 
 							height="360" 
-							src="https://hebrew-fos.ilogic-dev.net/wp-content/uploads/2025/05/donatebg1.jpg" 
+							src="https://hebrew-fos.ilogic-dev.net/wp-content/uploads/2025/05/bgdonate.jpg" 
 							class="desk_bg" 
 							alt="" 
-							srcset="https://hebrew-fos.ilogic-dev.net/wp-content/uploads/2025/05/donatebg1.jpg 1920w, https://hebrew-fos.ilogic-dev.net/wp-content/uploads/2025/05/donatebg1-300x56.jpg 300w, https://hebrew-fos.ilogic-dev.net/wp-content/uploads/2025/05/donatebg1-1024x192.jpg 1024w, https://hebrew-fos.ilogic-dev.net/wp-content/uploads/2025/05/donatebg1-768x144.jpg 768w, https://hebrew-fos.ilogic-dev.net/wp-content/uploads/2025/05/donatebg1-1536x288.jpg 1536w" 
+							srcset="https://hebrew-fos.ilogic-dev.net/wp-content/uploads/2025/05/bgdonate.jpg 1920w, https://hebrew-fos.ilogic-dev.net/wp-content/uploads/2025/05/bgdonate-300x56.jpg 300w, https://hebrew-fos.ilogic-dev.net/wp-content/uploads/2025/05/bgdonate-1024x192.jpg 1024w, https://hebrew-fos.ilogic-dev.net/wp-content/uploads/2025/05/bgdonate-768x144.jpg 768w, https://hebrew-fos.ilogic-dev.net/wp-content/uploads/2025/05/bgdonate-1536x288.jpg 1536w" 
 							sizes="auto, (max-width: 1920px) 100vw, 1920px">
 						<img loading="lazy" 
 							decoding="async" 
 							width="670" 
-							height="359" 
-							src="https://hebrew-fos.ilogic-dev.net/wp-content/uploads/2025/05/donateimg.png" 
+							height="360" 
+							src="https://hebrew-fos.ilogic-dev.net/wp-content/uploads/2025/05/Donatefos-1.png" 
 							class="bg_element" 
 							alt="" 
-							style="--bg-e-width-lg: auto; --bg-e-height-lg: 100%; --bg-e-left-lg: 0; --bg-e-right-lg: auto; --bg-e-top-lg: 0; --bg-e-bottom-lg: 0; --bg-e-width-mt: 33.5rem; --bg-e-height-mt: 17.95rem; --bg-e-left-mt: 0; --bg-e-right-mt: 0; --bg-e-top-mt: 0; --bg-e-bottom-mt: 0; --bg-e-display-mobile: none" 
-							srcset="https://hebrew-fos.ilogic-dev.net/wp-content/uploads/2025/05/donateimg.png 670w, https://hebrew-fos.ilogic-dev.net/wp-content/uploads/2025/05/donateimg-300x161.png 300w" 
+							style="--bg-e-width-lg: auto; --bg-e-height-lg: 100%; --bg-e-left-lg: 0; --bg-e-right-lg: auto; --bg-e-top-lg: 0; --bg-e-bottom-lg: 0; --bg-e-width-mt: 33.5rem; --bg-e-height-mt: 18rem; --bg-e-left-mt: 0; --bg-e-right-mt: 0; --bg-e-top-mt: 0; --bg-e-bottom-mt: 0; --bg-e-display-mobile: none" 
+							srcset="https://hebrew-fos.ilogic-dev.net/wp-content/uploads/2025/05/Donatefos-1.png 670w, https://hebrew-fos.ilogic-dev.net/wp-content/uploads/2025/05/Donatefos-1-300x161.png 300w" 
 							sizes="auto, (max-width: 670px) 100vw, 670px">
 						<img loading="lazy" 
 							decoding="async" 
 							width="709" 
 							height="609" 
-							src="https://hebrew-fos.ilogic-dev.net/wp-content/uploads/2025/05/Donate-now_image_mobile-1.png" 
+							src="https://hebrew-fos.ilogic-dev.net/wp-content/uploads/2025/05/Donate-now_image_mobile1-1.png" 
 							class="bg_element" 
 							alt="" 
 							style="--bg-e-width-lg: 70.9rem; --bg-e-height-lg: 60.9rem; --bg-e-left-lg: 0; --bg-e-right-lg: 0; --bg-e-top-lg: 0; --bg-e-bottom-lg: 0; --bg-e-width-mt: 50rem; --bg-e-height-mt: auto; --bg-e-left-mt: 0; --bg-e-right-mt: auto; --bg-e-top-mt: auto; --bg-e-bottom-mt: 0; --bg-e-display-desktop: none" 
-							srcset="https://hebrew-fos.ilogic-dev.net/wp-content/uploads/2025/05/Donate-now_image_mobile-1.png 709w, https://hebrew-fos.ilogic-dev.net/wp-content/uploads/2025/05/Donate-now_image_mobile-1-300x258.png 300w" 
+							srcset="https://hebrew-fos.ilogic-dev.net/wp-content/uploads/2025/05/Donate-now_image_mobile1-1.png 709w, https://hebrew-fos.ilogic-dev.net/wp-content/uploads/2025/05/Donate-now_image_mobile1-1-300x258.png 300w" 
 							sizes="auto, (max-width: 709px) 100vw, 709px">
 					</div>
 					<div class="il_section_inner container ib-fullwidth stack-mobile" style="--custom-max-width-ld: var(--site-width);">
 						<div class="il_block_intro align-right">
-							<h2 class="intro_title title-style-2 title-size-2 title-weight-700" style="--title-size-2-ld: 3.6rem; --title-size-2-mt: 25px; --title_margin_bottom_ld: 5rem; --title_margin_bottom_mt: 30px;">
+							<h2 class="intro_title title-style-1 title-size-2 title-weight-700" style="--title-size-2-ld: 3.6rem; --title-size-2-mt: 25px; --title_margin_bottom_ld: 5rem; --title_margin_bottom_mt: 30px;">
 								<span>זה הרבה יותר מתרומה. זו שותפות אמיתית בריפוי.</span><br>
 								הצטרפו לקהילת התורמים שלנו והשפיעו יחד איתנו
 							</h2>
