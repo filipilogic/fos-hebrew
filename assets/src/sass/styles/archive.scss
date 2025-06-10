@@ -4,6 +4,11 @@
         padding-bottom: 4.5rem;
         background: url('/wp-content/uploads/2023/10/Bg-1-1.svg');
         background-size: cover;
+        .il_block_intro {
+            @include desk-min {
+                width: 72%;
+            }
+        }
         .archive-main-content {
             display: flex;
             flex-wrap: wrap;
