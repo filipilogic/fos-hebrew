@@ -11,6 +11,9 @@
             @include limbo-max {
                 flex-direction: column-reverse;
             }
+            @include desk-min {
+                flex-direction: row-reverse;
+            }
             .archive-main-content-posts {
                 display: flex;
                 flex-wrap: wrap;

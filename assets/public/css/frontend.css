@@ -261,6 +261,11 @@ div.margin-xl {
     flex-direction: column-reverse;
   }
 }
+@media (min-width: 1199.6px) {
+  .archive-main-container .archive-main-container-inner .archive-main-content {
+    flex-direction: row-reverse;
+  }
+}
 .archive-main-container .archive-main-container-inner .archive-main-content .archive-main-content-posts {
   display: flex;
   flex-wrap: wrap;
