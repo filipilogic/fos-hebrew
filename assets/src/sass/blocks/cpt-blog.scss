@@ -206,29 +206,28 @@
     &.blog-carousel-enabled {
         overflow: hidden;
         .il_inner_posts_container {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            column-gap: 2rem;
-            row-gap: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
             width: 100%;
             @include limbo-max {
                 min-width: 100vw;
-                grid-template-columns: repeat(auto-fit, 38rem);
-            }
-            @include mob-only {
-                grid-template-columns: repeat(auto-fit, 65%);
+                margin-left: calc(-100vw + 100%);
             }
             article {
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                width: calc(25% - 8px);
                 height: 49.4rem;
                 @include limbo-max {
-                    height: 55rem;
+                    width: 38rem;
                 }
                 @include mob-only {
+                    width: 65%;
                     height: 60rem;
                 }
+                margin-left: 8px;
                 a {
                     width: 100%;
                     height: 100%;
@@ -259,6 +258,7 @@
                                 font-weight: 600;
                                 margin-bottom: 22px;
                                 line-height: 1.2;
+                                direction: rtl;
                                 @include limbo-max {
                                     font-size: 24px;
                                 }
@@ -268,12 +268,14 @@
                             font-size: 2rem;
                             font-weight: 600;
                             display: flex;
+                            flex-direction: row-reverse;
                             align-items: center;
                             @include limbo-max {
                                 font-size: 16px;
                             }
                             svg {
-                                margin-left: 15px;
+                                margin-right: 15px;
+                                transform: rotate(180deg);
                             }
                         }
                     }

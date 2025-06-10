@@ -6168,37 +6168,33 @@ textarea {
   overflow: hidden;
 }
 .il_block.il_cpt-blog.blog-carousel-enabled .il_inner_posts_container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
-  row-gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   width: 100%;
 }
 @media (max-width: 1199.5px) {
   .il_block.il_cpt-blog.blog-carousel-enabled .il_inner_posts_container {
     min-width: 100vw;
-    grid-template-columns: repeat(auto-fit, 38rem);
-  }
-}
-@media (max-width: 479.5px) {
-  .il_block.il_cpt-blog.blog-carousel-enabled .il_inner_posts_container {
-    grid-template-columns: repeat(auto-fit, 65%);
+    margin-left: calc(-100vw + 100%);
   }
 }
 .il_block.il_cpt-blog.blog-carousel-enabled .il_inner_posts_container article {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: calc(25% - 8px);
   height: 49.4rem;
+  margin-left: 8px;
 }
 @media (max-width: 1199.5px) {
   .il_block.il_cpt-blog.blog-carousel-enabled .il_inner_posts_container article {
-    height: 55rem;
+    width: 38rem;
   }
 }
 @media (max-width: 479.5px) {
   .il_block.il_cpt-blog.blog-carousel-enabled .il_inner_posts_container article {
+    width: 65%;
     height: 60rem;
   }
 }
@@ -6236,6 +6232,7 @@ textarea {
   font-weight: 600;
   margin-bottom: 22px;
   line-height: 1.2;
+  direction: rtl;
 }
 @media (max-width: 1199.5px) {
   .il_block.il_cpt-blog.blog-carousel-enabled .il_inner_posts_container article a .article-container .entry-header .entry-title {
@@ -6246,6 +6243,7 @@ textarea {
   font-size: 2rem;
   font-weight: 600;
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
 }
 @media (max-width: 1199.5px) {
@@ -6254,7 +6252,8 @@ textarea {
   }
 }
 .il_block.il_cpt-blog.blog-carousel-enabled .il_inner_posts_container article a .article-container .entry_btn svg {
-  margin-left: 15px;
+  margin-right: 15px;
+  transform: rotate(180deg);
 }
 .il_block.il_cpt-blog.blog-carousel-enabled .il_inner_posts_container article a:after {
   content: "";
