@@ -6274,6 +6274,7 @@ textarea {
 }
 .il_block.il_cpt-blog.blog-carousel-enabled.hp-latest-projects-section .prev-next-container {
   display: flex;
+  flex-direction: row-reverse;
   position: absolute;
 }
 .il_block.il_cpt-blog.blog-carousel-enabled.hp-latest-projects-section .prev-next-container .carousel-previous-button {
@@ -6298,7 +6299,7 @@ textarea {
 @media (min-width: 797.6px) {
   .il_block.il_cpt-blog.blog-carousel-enabled.hp-latest-projects-section .prev-next-container {
     bottom: 0;
-    right: 0;
+    left: 0;
   }
 }
 @media (min-width: 797.6px) {

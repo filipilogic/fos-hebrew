@@ -303,6 +303,7 @@
         &.hp-latest-projects-section {
             .prev-next-container {
                 display: flex;
+                flex-direction: row-reverse;
                 position: absolute;
                 .carousel-previous-button {
                     margin-right: 3.6rem;
@@ -323,7 +324,7 @@
                 }
                 @include limbo-min {
                     bottom: 0;
-                    right: 0;
+                    left: 0;
                 }
             }
             @include limbo-min {
