@@ -11,6 +11,9 @@
             @include limbo-max {
                 flex-direction: column-reverse;
             }
+            @include desk-min {
+                flex-direction: row-reverse;
+            }
             .archive-main-content-posts {
                 display: flex;
                 flex-wrap: wrap;
@@ -180,6 +183,7 @@
                     margin-bottom: 0;
                     position: relative;
                     pointer-events: none;
+                    text-align: right;
                     @include limbo-max{
                         font-size: 16px;
                         pointer-events: initial;
@@ -188,7 +192,7 @@
                         background-color: #fff;
                         color: var(--color-1);
                     }
-                    &::after {
+                    &::before {
                         @include limbo-max{
                             content: url('../../icons/icon menu.png');
                             position: absolute;
@@ -208,6 +212,7 @@
                     }
                     li{
                         padding-bottom: 16px;
+                        text-align: right;
                         a{
                             font-size: 14px;
                             line-height: 16px;

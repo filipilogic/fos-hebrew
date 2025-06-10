@@ -256,7 +256,7 @@ endif;
 			<div class="archive-main-container">
 				<div class="archive-main-container-inner">
 					<div class="container">
-						<div class="il_block_intro align-left">
+						<div class="il_block_intro align-right">
 							<div class="intro_before_title before-title-style-3 before-title-size-1 before-title-weight-500" style="--before-title-size-1-ld: 20px;--before-title-size-1-mt: 16px;--before_title_margin_bottom_ld: 1.8rem;--before_title_margin_bottom_mt: 12px;"><?php echo $archive_before_title; ?></div>
 							<h2 class="intro_title title-style-2 title-size-2 title-weight-700" style="--title_margin_bottom_ld: 5rem;--title_margin_bottom_mt: 30px;"><?php echo $archive_title; ?></h2>
 						</div>
