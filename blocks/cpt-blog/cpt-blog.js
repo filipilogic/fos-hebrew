@@ -2,7 +2,7 @@ jQuery(document).ready(function ($) {
 	
 	// Init Logo Carousel
 
-	$('.il_inner_posts_container').flickity({
+	$('.il_cpt-blog .il_inner_posts_container').flickity({
 		// options
 		cellAlign: 'right',
 		contain: true,
@@ -12,7 +12,9 @@ jQuery(document).ready(function ($) {
 		wrapAround: true,
 		autoPlay: false,
 		selectedAttraction: 0.009,
-		watchCSS: true
+		watchCSS: true,
+		rightToLeft: true,
+		imagesLoaded: true
 		});
 
 	$('.carousel-previous-button').click(function() {
