@@ -314,7 +314,7 @@
                 }
                 @include tab-max {
                     left: 0;
-                    bottom: 5rem;
+                    bottom: 0;
                     width: 100%;
                     justify-content: center;
                     img {
@@ -323,8 +323,8 @@
                     }
                 }
                 @include limbo-min {
-                    bottom: 0;
-                    left: 0;
+                    top: 4.7rem;
+                    left: auto;
                 }
             }
             @include limbo-min {
