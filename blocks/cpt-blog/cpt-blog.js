@@ -4,7 +4,7 @@ jQuery(document).ready(function ($) {
 
 	$('.il_inner_posts_container').flickity({
 		// options
-		cellAlign: 'left',
+		cellAlign: 'right',
 		contain: true,
 		pageDots: false,
 		prevNextButtons: true,
