@@ -449,7 +449,7 @@ div.margin-xl {
   }
 }
 @media (max-width: 1199.5px) and (max-width: 1199.5px) {
-  .archive-main-container .archive-main-container-inner .archive-main-content .archive-main-content-sidebar.active-list .archive-main-content-sidebar-category-heading::after {
+  .archive-main-container .archive-main-container-inner .archive-main-content .archive-main-content-sidebar.active-list .archive-main-content-sidebar-category-heading::before {
     content: url("../../icons/icon-menu.svg");
   }
 }
@@ -479,7 +479,7 @@ div.margin-xl {
   .archive-main-container .archive-main-container-inner .archive-main-content .archive-main-content-sidebar .archive-main-content-sidebar-category-heading::before {
     content: url("../../icons/icon menu.png");
     position: absolute;
-    right: 16px;
+    left: 16px;
   }
 }
 .archive-main-container .archive-main-container-inner .archive-main-content .archive-main-content-sidebar .wp-block-categories-list {

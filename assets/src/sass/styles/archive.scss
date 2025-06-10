@@ -165,7 +165,7 @@
                         .archive-main-content-sidebar-category-heading {
                             background-color: var(--color-1);
                             color: #fff;
-                            &::after {
+                            &::before {
                                 @include limbo-max{
                                     content: url('../../icons/icon-menu.svg');
                                 }
@@ -196,7 +196,7 @@
                         @include limbo-max{
                             content: url('../../icons/icon menu.png');
                             position: absolute;
-                            right:16px;
+                            left: 16px;
                         }
                     }
                 }
