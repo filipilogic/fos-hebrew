@@ -4,21 +4,12 @@
         padding-bottom: 4.5rem;
         background: url('/wp-content/uploads/2023/10/Bg-1-1.svg');
         background-size: cover;
-        .il_block_intro {
-            width: 72%;
-            @include desk-min {
-                width: 72%;
-            }
-        }
         .archive-main-content {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             @include limbo-max {
                 flex-direction: column-reverse;
-            }
-            @include desk-min {
-                flex-direction: row-reverse;
             }
             .archive-main-content-posts {
                 display: flex;

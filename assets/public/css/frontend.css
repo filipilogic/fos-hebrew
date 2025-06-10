@@ -458,6 +458,7 @@ div.margin-xl {
   margin-bottom: 0;
   position: relative;
   pointer-events: none;
+  text-align: right;
 }
 @media (max-width: 1199.5px) {
   .archive-main-container .archive-main-container-inner .archive-main-content .archive-main-content-sidebar .archive-main-content-sidebar-category-heading {
@@ -470,7 +471,7 @@ div.margin-xl {
   }
 }
 @media (max-width: 1199.5px) {
-  .archive-main-container .archive-main-container-inner .archive-main-content .archive-main-content-sidebar .archive-main-content-sidebar-category-heading::after {
+  .archive-main-container .archive-main-container-inner .archive-main-content .archive-main-content-sidebar .archive-main-content-sidebar-category-heading::before {
     content: url("../../icons/icon menu.png");
     position: absolute;
     right: 16px;
@@ -491,6 +492,7 @@ div.margin-xl {
 }
 .archive-main-container .archive-main-container-inner .archive-main-content .archive-main-content-sidebar .wp-block-categories-list li {
   padding-bottom: 16px;
+  text-align: right;
 }
 .archive-main-container .archive-main-container-inner .archive-main-content .archive-main-content-sidebar .wp-block-categories-list li a {
   font-size: 14px;
