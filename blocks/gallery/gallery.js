@@ -15,19 +15,25 @@ jQuery(document).ready(function ($) {
 		watchCSS: true
 		});
 
-		$('.carousel-previous-button').click(function() {
-			// Find the closest common ancestor
-			var commonAncestor = $(this).closest('.container');
-	
-			// Find the element with class flickity-prev-next-button.previous within the common ancestor and click on it
-			commonAncestor.find('.flickity-prev-next-button.previous').click();
-		});
-	
-		$('.carousel-next-button').click(function() {
-			// Find the closest common ancestor
-			var commonAncestor = $(this).closest('.container');
-	
-			// Find the element with class flickity-prev-next-button.previous within the common ancestor and click on it
-			commonAncestor.find('.flickity-prev-next-button.next').click();
-		});
+	$('.carousel-previous-button').click(function() {
+		// Find the closest gallery block (more specific than just .container)
+		var galleryBlock = $(this).closest('.il_gallery');
+		
+		// Target only the specific carousel within this block
+		var targetCarousel = galleryBlock.find('.il_gallery_inner');
+		
+		// Find the specific flickity button within this carousel only
+		targetCarousel.find('.flickity-prev-next-button.previous').click();
+	});
+
+	$('.carousel-next-button').click(function() {
+		// Find the closest gallery block (more specific than just .container)
+		var galleryBlock = $(this).closest('.il_gallery');
+		
+		// Target only the specific carousel within this block
+		var targetCarousel = galleryBlock.find('.il_gallery_inner');
+		
+		// Find the specific flickity button within this carousel only
+		targetCarousel.find('.flickity-prev-next-button.next').click();
+	});
 });
