@@ -18,18 +18,24 @@ jQuery(document).ready(function ($) {
 		});
 
 	$('.carousel-previous-button').click(function() {
-		// Find the closest common ancestor
-		var commonAncestor = $(this).closest('.container');
-
-		// Find the element with class flickity-prev-next-button.previous within the common ancestor and click on it
-		commonAncestor.find('.flickity-prev-next-button.previous').click();
+		// Find the closest carousel block (more specific than just .container)
+		var carouselBlock = $(this).closest('.il_cpt-blog');
+		
+		// Target only the specific carousel within this block
+		var targetCarousel = carouselBlock.find('.il_inner_posts_container');
+		
+		// Find the specific flickity button within this carousel only
+		targetCarousel.find('.flickity-prev-next-button.previous').click();
 	});
 
 	$('.carousel-next-button').click(function() {
-		// Find the closest common ancestor
-		var commonAncestor = $(this).closest('.container');
-
-		// Find the element with class flickity-prev-next-button.previous within the common ancestor and click on it
-		commonAncestor.find('.flickity-prev-next-button.next').click();
+		// Find the closest carousel block (more specific than just .container)
+		var carouselBlock = $(this).closest('.il_cpt-blog');
+		
+		// Target only the specific carousel within this block
+		var targetCarousel = carouselBlock.find('.il_inner_posts_container');
+		
+		// Find the specific flickity button within this carousel only
+		targetCarousel.find('.flickity-prev-next-button.next').click();
 	});
 });
