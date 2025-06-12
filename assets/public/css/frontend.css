@@ -6303,7 +6303,7 @@ textarea {
 @media (min-width: 797.6px) {
   .il_block.il_cpt-blog.blog-carousel-enabled.hp-latest-projects-section .prev-next-container {
     top: 4.7rem;
-    left: auto;
+    left: 0;
   }
 }
 @media (min-width: 797.6px) {
