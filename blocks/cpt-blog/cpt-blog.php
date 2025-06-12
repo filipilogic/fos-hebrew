@@ -215,7 +215,7 @@ if( $custom_padding ) {
 
         <?php if ( $show_pagination && $total_posts > $posts_per_page ) : ?>
             <div class="load-more-container">
-                <button class="load-more-cpt-button il_btn" data-block-id="<?php echo $block_id; ?>" data-block-type="<?php echo $block_type; ?>">Load More</button>
+                <button class="load-more-cpt-button il_btn" data-block-id="<?php echo $block_id; ?>" data-block-type="<?php echo $block_type; ?>">טען עוד</button>
             </div>
             
             <script>
