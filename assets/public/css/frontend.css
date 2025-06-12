@@ -5406,6 +5406,10 @@ textarea {
 .il_block.il_blog-block-section.blog-carousel-enabled.no-play-button .container .il_inner_posts_container article a:before {
   display: none;
 }
+.il_block.il_blog-block-section.hp-blog-block-center-button .buttons-after-blog {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .il_block.il_columns {
   padding-top: var(--b-columns-space-top-ld);
