@@ -965,7 +965,7 @@ div.margin-xl {
 }
 @media (min-width: 797.6px) {
   .wpcf7-form p {
-    width: 48%;
+    width: 48.5%;
     margin-bottom: 3.6rem;
   }
 }
@@ -9032,6 +9032,9 @@ textarea {
   .il_tabs .il_tab_text .tabs-title-div img {
     width: 36px;
   }
+}
+.il_tabs .wpcf7-submit {
+  width: 100%;
 }
 
 .il_block.team {

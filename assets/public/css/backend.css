@@ -4907,6 +4907,9 @@ div.margin-xl {
     width: 36px;
   }
 }
+.il_tabs .wpcf7-submit {
+  width: 100%;
+}
 
 .il_block.team {
   padding-top: 10rem;
