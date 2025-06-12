@@ -177,6 +177,7 @@
       background: url('/wp-content/uploads/2023/07/Bg-5-1.jpg');
       padding-top: 3.6rem;
       padding-bottom: 3.6rem;
+      direction: rtl;
       @include tab-max {
         padding-top: 0;
         padding-bottom: 0;
@@ -187,16 +188,16 @@
         position: absolute;
         cursor: pointer;
         @include desk-min {
-          top: 6rem;
-          right: 5rem;
+          top: 4rem;
+          left: 5rem;
         }
         @include limbo-only {
           top: 6rem;
-          right: 5rem;
+          left: 5rem;
         }
         @include tab-max {
           top: 6rem;
-          right: 5rem;
+          left: 5rem;
         }
       }
       .member_text_inner {

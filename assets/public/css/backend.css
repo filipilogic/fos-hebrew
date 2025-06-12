@@ -5105,6 +5105,7 @@ div.margin-xl {
   background: url("/wp-content/uploads/2023/07/Bg-5-1.jpg");
   padding-top: 3.6rem;
   padding-bottom: 3.6rem;
+  direction: rtl;
   transition: var(--theme-transiton);
   color: #fff;
 }
@@ -5122,20 +5123,20 @@ div.margin-xl {
 }
 @media (min-width: 1199.6px) {
   .il_block.team .il_team_row .member_text .close {
-    top: 6rem;
-    right: 5rem;
+    top: 4rem;
+    left: 5rem;
   }
 }
 @media (min-width: 797.6px) and (max-width: 1199.5px) {
   .il_block.team .il_team_row .member_text .close {
     top: 6rem;
-    right: 5rem;
+    left: 5rem;
   }
 }
 @media (max-width: 797.5px) {
   .il_block.team .il_team_row .member_text .close {
     top: 6rem;
-    right: 5rem;
+    left: 5rem;
   }
 }
 .il_block.team .il_team_row .member_text .member_text_inner {
