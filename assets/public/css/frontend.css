@@ -2250,6 +2250,7 @@ main {
     margin-right: 2rem;
     color: var(--color-text);
     font-size: 16px;
+    text-align: right;
   }
   .header-version-1 .header-main-inner .logo-wrap {
     flex: 16% 0 0;
