@@ -372,4 +372,11 @@
             }
         }
     }
+
+    &.hp-blog-block-center-button {
+        .buttons-after-blog {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
 }
