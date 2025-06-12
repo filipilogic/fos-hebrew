@@ -325,19 +325,6 @@
                             @include limbo-max {
                                 padding: 4rem;
                             }
-                            &:before {
-                                content: '';
-                                position: absolute;
-                                width: 40px;
-                                height: 40px;
-                                top: calc(50% - 20px);
-                                left: calc(50% - 20px);
-                                border-radius: 20px;
-                                background: url('/wp-content/uploads/2023/10/Play-button.png');
-                                background-repeat: no-repeat;
-                                background-position: center;
-                                z-index: 1;
-                            }
                         }
                         .article-container {
                             .entry-header {

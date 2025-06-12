@@ -1256,19 +1256,6 @@ div.margin-xl {
     padding: 4rem;
   }
 }
-.il_block.il_blog-block-section.blog-carousel-enabled.hp-meet-our-donors-section .container .il_inner_posts_container article a:before {
-  content: "";
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  top: calc(50% - 20px);
-  left: calc(50% - 20px);
-  border-radius: 20px;
-  background: url("/wp-content/uploads/2023/10/Play-button.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 1;
-}
 .il_block.il_blog-block-section.blog-carousel-enabled.hp-meet-our-donors-section .container .il_inner_posts_container article .article-container .entry-header .entry-title {
   margin-bottom: 0;
   line-height: 3.6rem;
@@ -2285,19 +2272,6 @@ div.margin-xl {
   .il_block.il_cpt-blog.blog-carousel-enabled.hp-meet-our-donors-section .container .il_inner_posts_container article a {
     padding: 4rem;
   }
-}
-.il_block.il_cpt-blog.blog-carousel-enabled.hp-meet-our-donors-section .container .il_inner_posts_container article a:before {
-  content: "";
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  top: calc(50% - 20px);
-  left: calc(50% - 20px);
-  border-radius: 20px;
-  background: url("/wp-content/uploads/2023/10/Play-button.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 1;
 }
 .il_block.il_cpt-blog.blog-carousel-enabled.hp-meet-our-donors-section .container .il_inner_posts_container article .article-container .entry-header .entry-title {
   margin-bottom: 0;
