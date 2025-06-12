@@ -366,7 +366,7 @@ endif;
 								<p>האגודה מהווה שגרירה של חזון שיבא בישראל, ומזמינה את הציבור לקחת חלק בעשייה הרפואית, המדעית והחברתית שמובילה את הרפואה קדימה – לטובת כל אחת ואחד מאיתנו.</p>
 							</div>
 							<div class="buttons">
-								<a class="il_btn button-color-green button-hover-color-green" href="#" target="_self">READ MORE</a>
+								<a class="il_btn button-color-green button-hover-color-green" href="#" target="_self">קרא עוד</a>
 							</div>
 						</div>
 					</div>
