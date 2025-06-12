@@ -516,3 +516,77 @@ function load_more_posts_cpt_block() {
 
 add_action('wp_ajax_load_more_posts_cpt_block', 'load_more_posts_cpt_block');
 add_action('wp_ajax_nopriv_load_more_posts_cpt_block', 'load_more_posts_cpt_block');
+
+function custom_add_project_field() {
+    wpcf7_add_form_tag('project_select', 'custom_project_select_handler', ['name-attr' => true]);
+}
+
+function custom_project_select_handler($tag) {
+    $tag = new WPCF7_FormTag($tag);
+
+    if (empty($tag->name)) {
+        return '';
+    }
+
+    // Get additional attributes from the tag
+    $atts = [];
+    $atts['name'] = $tag->name;
+    $atts['class'] = $tag->get_class_option('wpcf7-form-control wpcf7-select wpcf7-project-select');
+    $atts['id'] = $tag->get_id_option();
+    $atts['tabindex'] = $tag->get_option('tabindex', 'signed_int', true);
+    
+    // Handle required field
+    if ($tag->is_required()) {
+        $atts['aria-required'] = 'true';
+        $atts['required'] = 'required';
+    }
+
+    // Get all 'project' posts
+    $projects = get_posts([
+        'post_type' => 'project',
+        'posts_per_page' => -1,
+        'post_status' => 'publish',
+        'orderby' => 'title',
+        'order' => 'ASC',
+        'meta_query' => [
+            [
+                'key' => '_thumbnail_id',
+                'compare' => 'EXISTS' // Only get projects with featured images (optional)
+            ]
+        ]
+    ]);
+
+    // Build attributes string
+    $atts_string = '';
+    foreach ($atts as $name => $value) {
+        if ($value !== '') {
+            $atts_string .= sprintf(' %s="%s"', $name, esc_attr($value));
+        }
+    }
+
+    // Build the select field
+    $html = sprintf('<select%s>', $atts_string);
+    $html .= '<option value="">בחר פרויקט</option>';
+
+    // Check if we have projects
+    if (!empty($projects)) {
+        foreach ($projects as $project) {
+            $html .= sprintf(
+                '<option value="%s">%s</option>',
+                esc_attr($project->post_title),
+                esc_html($project->post_title)
+            );
+        }
+    } else {
+        // Fallback if no projects found
+        $html .= '<option value="" disabled>לא נמצאו פרויקטים</option>';
+    }
+
+    // הוספת אופציית "אחר"
+    $html .= '<option value="other">אחר</option>';
+    $html .= '</select>';
+
+    return $html;
+}
+
+add_action('wpcf7_init', 'custom_add_project_field');

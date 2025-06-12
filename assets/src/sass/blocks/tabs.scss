@@ -1,9 +1,19 @@
 .il_tabs {
+    padding: 5rem 0;
     .il_tabs_nav {
+        direction: rtl;
         ul {
             margin: 0;
             padding: 0;
             display: flex;
+            @include tab-max {
+                margin-right: 0px;
+            }
+            @include limbo-min {
+                margin-right: 15px;
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
         }
         li {
             display: inline-block;
@@ -13,6 +23,14 @@
             border-style: solid;
             border-color: #34495E;
             margin-right: 5px;
+            @include tab-max {
+                margin-right: 0px;
+                margin-left: 5px;
+            }
+            @include limbo-min {
+                box-shadow: 10px -5px 10px #00000010;
+                border-radius: 10px 10px 0px 0px;
+            }
             a {
                 display: block;
                 padding: 10px 15px;
@@ -42,6 +60,18 @@
         .il_tab:not(:first-child) {
             display: none;
         }
+        @include tab-max {
+            border-radius: 0px;
+        }
+        @include limbo-min {
+            border-radius: 25px;
+            border: 0px solid var(--color-1);
+            padding: 2rem;
+            background: #FFF;
+            margin-top: -1px;
+            overflow: hidden;
+            box-shadow: 10px 10px 25px #00000020;
+        }
     }
     @include mob-only {
         &.stack_tabs {
@@ -52,6 +82,41 @@
                     &.active {
                         order: 1;
                     }
+                }
+            }
+        }
+    }
+
+    .il_tab_text {
+        padding: 2em 2em 2em 5em;
+        direction: rtl;
+        @include limbo-max {
+            padding: 2em 2em 2em 2rem;
+        }
+        .tabs-title-div {
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            text-align: right;
+            gap: 12px;
+            direction: rtl;
+            @include tab-max {
+                gap: 9px;
+            }
+            p {
+                margin: 0;
+                color: var(--color-1);
+                font-size: 4.2rem;
+                font-weight: 600;
+                line-height: 1.1;
+                @include tab-max {
+                    font-size: 23px;
+                }
+            }
+            img {
+                width: 48px;
+                @include limbo-max {
+                    width: 36px;
                 }
             }
         }

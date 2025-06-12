@@ -1035,3 +1035,46 @@
     }
   }
 }
+
+.event-cf-box {
+  display: flex;
+  gap: 25px;
+  width: 100%;
+  p {
+    width: fit-content;
+    @include limbo-max {
+      width: 100%;
+    }
+  }
+  @include limbo-max {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .wpcf7-list-item, .wpcf7-list-item label {
+    direction: rtl;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-left: 0;
+    [type="checkbox"] {
+      margin-top: 4px;
+    }
+    @include limbo-max {
+      width: unset !important;
+      height: unset !important;
+      background: none !important;
+      flex-direction: row !important;
+    }
+  }
+  .wpcf7-list-item-label {
+    font-size: 14px;
+    a {
+      font-size: 14px;
+    }
+    @include limbo-max {
+      width: unset !important;
+      height: unset !important;
+      background: none !important;
+    }
+  }
+}
