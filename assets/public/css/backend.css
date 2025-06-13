@@ -4176,6 +4176,9 @@ div.margin-xl {
     margin-bottom: 30px;
   }
 }
+.hp-newsletter-form-section .il_section_inner .wpcf7-submit {
+  width: 100%;
+}
 
 .about-contact-form-section .il_section_inner {
   border-radius: 30px;
