@@ -9039,6 +9039,32 @@ textarea {
 .il_tabs .wpcf7-submit {
   width: 100%;
 }
+.il_tabs .frm_style_formidable-style select, .il_tabs .frm_style_formidable-style input, .il_tabs .frm_style_formidable-style textarea {
+  box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.1);
+}
+.il_tabs .frm_style_formidable-style .frm_top_container .frm_primary_label {
+  height: auto !important;
+}
+.il_tabs .frm_style_formidable-style .frm_top_container .frm_primary_label span {
+  background: transparent;
+}
+.il_tabs .frm_style_formidable-style .vertical_radio .frm_checkbox label, .il_tabs .frm_style_formidable-style .vertical_radio .frm_radio label {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.il_tabs .frm_style_formidable-style label {
+  width: unset;
+}
+.il_tabs .frm_style_formidable-style .frm_checkbox label input[type=checkbox], .il_tabs .frm_style_formidable-style .frm_radio label input[type=radio] {
+  margin-right: 10px;
+  margin-left: 6px;
+}
+.il_tabs .frm_style_formidable-style .frm_first.horizontal_radio .frm_checkbox:first-child label input[type=checkbox], .il_tabs .frm_style_formidable-style .frm_first.horizontal_radio .frm_radio:first-child label input[type=radio] {
+  margin-right: 0px;
+}
 
 .il_block.team {
   padding-top: 10rem;

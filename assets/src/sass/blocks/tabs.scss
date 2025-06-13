@@ -125,4 +125,38 @@
     .wpcf7-submit {
         width: 100%;
     }
+
+    .frm_style_formidable-style {
+        select, input, textarea {
+            box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.1);
+        }
+
+        .frm_top_container .frm_primary_label {
+            height: auto !important;
+            span {
+                background: transparent;
+            }
+        }
+
+        .vertical_radio .frm_checkbox label, .vertical_radio .frm_radio label {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            justify-content: flex-start;
+            gap: 10px;
+        }
+
+        label {
+            width: unset;
+        }
+
+        .frm_checkbox label input[type=checkbox], .frm_radio label input[type=radio] {
+            margin-right: 10px;
+            margin-left: 6px;
+        }
+
+        .frm_first.horizontal_radio .frm_checkbox:first-child label input[type=checkbox], .frm_first.horizontal_radio .frm_radio:first-child label input[type=radio] {
+            margin-right: 0px;
+        }
+    }
 }
