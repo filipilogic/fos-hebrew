@@ -162,6 +162,7 @@ function register_acf_blocks() {
 	register_block_type( __DIR__ . '/blocks/related-posts' );
 	register_block_type( __DIR__ . '/blocks/content-and-sidebar' );
 	register_block_type( __DIR__ . '/blocks/cpt-blog' );
+    register_block_type( __DIR__ . '/blocks/video-gallery' );
 }
 
 

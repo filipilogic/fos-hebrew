@@ -1,0 +1,16 @@
+{
+    "name": "acf/video-gallery",
+    "title": "iLogic Video Gallery",
+    "description": "A Section Block containing the Info Box and the video",
+    "category": "ilogic-category",
+    "icon": "welcome-widgets-menus",
+    "keywords": ["video gallery", "ilogic"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "video-gallery.php"
+    },
+    "supports": {
+		"align": false,
+		"anchor": true
+	}
+}
