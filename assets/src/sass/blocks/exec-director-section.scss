@@ -16,3 +16,15 @@
     }
   }
 }
+
+.exec-director-align-center {
+  .il_section_inner {
+    align-items: center;
+  }
+
+  .right {
+    @include desk-min {
+      justify-content: flex-end;
+    }
+  }
+}
