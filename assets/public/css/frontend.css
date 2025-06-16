@@ -6452,6 +6452,9 @@ textarea {
 .exec-director-align-center .il_section_inner {
   align-items: center;
 }
+.exec-director-align-center .right {
+  justify-content: center;
+}
 @media (min-width: 1199.6px) {
   .exec-director-align-center .right {
     justify-content: flex-end;

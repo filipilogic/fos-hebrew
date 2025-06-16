@@ -23,6 +23,7 @@
   }
 
   .right {
+    justify-content: center;
     @include desk-min {
       justify-content: flex-end;
     }
