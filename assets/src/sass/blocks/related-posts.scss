@@ -57,6 +57,7 @@
             }
             .article-container {
                 padding: 18px 24px 36px 24px;
+                text-align: right;
                 @include limbo-max {
                     padding: 16px 24px 28px 24px;
                 }
