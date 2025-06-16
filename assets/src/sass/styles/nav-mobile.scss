@@ -61,6 +61,14 @@
         background-position: bottom right, center;
         left: 0;
         padding: 25px;
+        z-index: -1;
+        opacity: 0;
+        visibility: hidden;
+        transition: var(--theme-transition);
+        direction: rtl;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column-reverse;
         li {
             a {
                 padding: 2.5rem;
