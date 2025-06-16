@@ -417,6 +417,7 @@ div.margin-xl {
 .archive-main-container .archive-main-container-inner .archive-main-content .archive-main-content-posts .pagination .page-numbers.prev, .archive-main-container .archive-main-container-inner .archive-main-content .archive-main-content-posts .pagination .page-numbers.next {
   font-size: 20px;
   color: var(--color-2);
+  transform: rotate(180deg);
 }
 .archive-main-container .archive-main-container-inner .archive-main-content .archive-main-content-posts .pagination .page-numbers.current {
   font-weight: 700;
@@ -791,6 +792,7 @@ div.margin-xl {
 .blog-main-container .blog-main-container-inner .blog-main-container-middle-posts .pagination .page-numbers.prev, .blog-main-container .blog-main-container-inner .blog-main-container-middle-posts .pagination .page-numbers.next {
   font-size: 20px;
   color: var(--color-2);
+  transform: rotate(180deg);
 }
 .blog-main-container .blog-main-container-inner .blog-main-container-middle-posts .pagination .page-numbers.current {
   font-weight: 700;
@@ -954,6 +956,7 @@ div.margin-xl {
 .blog-main-container .blog-main-container-inner .blog-main-container-bottom-posts .pagination .page-numbers.prev, .blog-main-container .blog-main-container-inner .blog-main-container-bottom-posts .pagination .page-numbers.next {
   font-size: 20px;
   color: var(--color-2);
+  transform: rotate(180deg);
 }
 .blog-main-container .blog-main-container-inner .blog-main-container-bottom-posts .pagination .page-numbers.current {
   font-weight: 700;

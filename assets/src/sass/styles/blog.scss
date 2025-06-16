@@ -236,6 +236,7 @@
                     &.prev, &.next {
                         font-size: 20px;
                         color: var(--color-2);
+                        transform: rotate(180deg);
                     }
                     &.current {
                         font-weight: 700;
@@ -376,6 +377,7 @@
                     &.prev, &.next {
                         font-size: 20px;
                         color: var(--color-2);
+                        transform: rotate(180deg);
                     }
                     &.current {
                         font-weight: 700;
