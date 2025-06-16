@@ -1994,8 +1994,8 @@ main {
     height: 100%;
     -o-object-fit: contain;
        object-fit: contain;
-    -o-object-position: left;
-       object-position: left;
+    -o-object-position: right;
+       object-position: right;
   }
   .main-navigation ul {
     display: none;
@@ -2015,6 +2015,7 @@ main {
     color: var(--color-text);
     font-size: 18px;
     width: 100%;
+    text-align: right;
   }
   #primary-menu li.current-menu-item a {
     opacity: 1;
@@ -2030,9 +2031,10 @@ main {
   #primary-menu li > .sub-menu {
     width: 100%;
     margin-left: 10px;
+    padding-right: 0;
   }
   #primary-menu li > .sub-menu a {
-    padding: 1rem 1.5rem;
+    padding: 1rem 2.5rem;
   }
   #primary-menu li.sub-menu-open .sub-menu-trigger {
     transform: rotate(90deg);
@@ -2040,12 +2042,13 @@ main {
   #primary-menu li.menu-li-hide-desktop {
     width: -moz-fit-content;
     width: fit-content;
+    margin-left: auto;
   }
   #primary-menu li.menu-li-hide-desktop a {
     color: var(--color-2);
     font-weight: 600;
     border: 2px solid var(--color-2);
-    margin: 22px 0 0 11px;
+    margin: 22px 11px 0 0;
     padding: 2.5rem 5rem;
   }
   #primary-menu > li {
@@ -2266,8 +2269,8 @@ main {
     height: 100%;
     -o-object-fit: contain;
        object-fit: contain;
-    -o-object-position: left;
-       object-position: left;
+    -o-object-position: right;
+       object-position: right;
     width: auto;
     min-height: 9rem;
   }
