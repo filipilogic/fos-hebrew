@@ -210,6 +210,7 @@
                 margin: 3.6rem 0;
                 width: 100%;
                 text-align: right;
+                direction: rtl;
                 @include limbo-max {
                     margin: 36px 0;
                     text-align: center;
@@ -230,7 +231,7 @@
                         height: 8rem;
                     }
                     &:not(:last-child) {
-                        margin-right: 8px;
+                        margin-left: 8px;
                     }
                     &.prev, &.next {
                         font-size: 20px;
@@ -349,6 +350,7 @@
                 margin: 5rem 0 3.6rem 0;
                 width: 100%;
                 text-align: right;
+                direction: rtl;
                 @include limbo-max {
                     margin: 45px 0 25px 0;
                     text-align: center;
@@ -369,7 +371,7 @@
                         height: 8rem;
                     }
                     &:not(:last-child) {
-                        margin-right: 8px;
+                        margin-left: 8px;
                     }
                     &.prev, &.next {
                         font-size: 20px;

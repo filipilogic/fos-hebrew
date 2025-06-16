@@ -385,6 +385,7 @@ div.margin-xl {
   margin: 1.6rem 0 3.6rem 0;
   width: 100%;
   text-align: center;
+  direction: rtl;
 }
 @media (max-width: 1199.5px) {
   .archive-main-container .archive-main-container-inner .archive-main-content .archive-main-content-posts .pagination {
@@ -411,7 +412,7 @@ div.margin-xl {
   }
 }
 .archive-main-container .archive-main-container-inner .archive-main-content .archive-main-content-posts .pagination .page-numbers:not(:last-child) {
-  margin-right: 8px;
+  margin-left: 8px;
 }
 .archive-main-container .archive-main-container-inner .archive-main-content .archive-main-content-posts .pagination .page-numbers.prev, .archive-main-container .archive-main-container-inner .archive-main-content .archive-main-content-posts .pagination .page-numbers.next {
   font-size: 20px;
@@ -758,6 +759,7 @@ div.margin-xl {
   margin: 3.6rem 0;
   width: 100%;
   text-align: right;
+  direction: rtl;
 }
 @media (max-width: 1199.5px) {
   .blog-main-container .blog-main-container-inner .blog-main-container-middle-posts .pagination {
@@ -784,7 +786,7 @@ div.margin-xl {
   }
 }
 .blog-main-container .blog-main-container-inner .blog-main-container-middle-posts .pagination .page-numbers:not(:last-child) {
-  margin-right: 8px;
+  margin-left: 8px;
 }
 .blog-main-container .blog-main-container-inner .blog-main-container-middle-posts .pagination .page-numbers.prev, .blog-main-container .blog-main-container-inner .blog-main-container-middle-posts .pagination .page-numbers.next {
   font-size: 20px;
@@ -920,6 +922,7 @@ div.margin-xl {
   margin: 5rem 0 3.6rem 0;
   width: 100%;
   text-align: right;
+  direction: rtl;
 }
 @media (max-width: 1199.5px) {
   .blog-main-container .blog-main-container-inner .blog-main-container-bottom-posts .pagination {
@@ -946,7 +949,7 @@ div.margin-xl {
   }
 }
 .blog-main-container .blog-main-container-inner .blog-main-container-bottom-posts .pagination .page-numbers:not(:last-child) {
-  margin-right: 8px;
+  margin-left: 8px;
 }
 .blog-main-container .blog-main-container-inner .blog-main-container-bottom-posts .pagination .page-numbers.prev, .blog-main-container .blog-main-container-inner .blog-main-container-bottom-posts .pagination .page-numbers.next {
   font-size: 20px;
