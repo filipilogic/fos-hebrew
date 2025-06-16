@@ -115,6 +115,11 @@
             align-items: center;
             flex-wrap: wrap;
         }
+        &.mobile-menu-visible {
+            opacity: 1;
+            visibility: visible;
+            display: flex;
+        }
     }
     .nav-button {
         display: none!important;
