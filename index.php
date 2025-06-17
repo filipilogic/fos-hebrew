@@ -236,17 +236,48 @@ endif;
 				</div>
 
 				<!-- Bottom CTA Section -->
-				<div class="il_block il_section hp-helping-donate-now-section " style=" --b-space-top-ld: 6.5rem; --b-space-bottom-ld: 8.1rem; --b-space-top-mt: 10rem; --b-space-bottom-mt: 32rem;">
+				<div class="il_block il_section hp-helping-donate-now-section" style="--b-space-top-ld: 6.5rem; --b-space-bottom-ld: 8.1rem; --b-space-top-mt: 10rem; --b-space-bottom-mt: 32rem;">
 					<div class="il_block_bg" style="background: linear-gradient(96deg, #053279 0%, #030B27 99.13%);">
-					<img loading="lazy" decoding="async" width="670" height="360" src="/wp-content/uploads/2023/10/Image-18.png" class="bg_element" alt="" style="--bg-e-width-lg: auto; --bg-e-height-lg: 100%; --bg-e-left-lg: auto; --bg-e-right-lg: 0; --bg-e-top-lg: 0; --bg-e-bottom-lg: 0; --bg-e-width-mt: 33.5rem; --bg-e-height-mt: 18rem; --bg-e-left-mt: 0; --bg-e-right-mt: 0; --bg-e-top-mt: 0; --bg-e-bottom-mt: 0; --bg-e-display-mobile: none" srcset="/wp-content/uploads/2023/10/Image-18.png 670w, /wp-content/uploads/2023/10/Image-18-300x161.png 300w" sizes="(max-width: 670px) 100vw, 670px"><img loading="lazy" decoding="async" width="955" height="784" src="/wp-content/uploads/2023/12/Donate-now_image_mobile-2.png" class="bg_element" alt="" style="--bg-e-width-lg: 95.5rem; --bg-e-height-lg: 78.4rem; --bg-e-left-lg: 0; --bg-e-right-lg: 0; --bg-e-top-lg: 0; --bg-e-bottom-lg: 0; --bg-e-width-mt: 40rem; --bg-e-height-mt: auto; --bg-e-left-mt: auto; --bg-e-right-mt: 0; --bg-e-top-mt: auto; --bg-e-bottom-mt: 0; --bg-e-display-desktop: none" srcset="/wp-content/uploads/2023/12/Donate-now_image_mobile-2.png 955w, /wp-content/uploads/2023/11/Donate-now_image_mobile-2-300x246.png 300w, /wp-content/uploads/2023/11/Donate-now_image_mobile-2-768x630.png 768w" sizes="(max-width: 955px) 100vw, 955px">
+						<img loading="lazy" 
+							decoding="async" 
+							width="1920" 
+							height="360" 
+							src="https://hebrew-fos.ilogic-dev.net/wp-content/uploads/2025/05/bgdonate.jpg" 
+							class="desk_bg" 
+							alt="" 
+							srcset="https://hebrew-fos.ilogic-dev.net/wp-content/uploads/2025/05/bgdonate.jpg 1920w, https://hebrew-fos.ilogic-dev.net/wp-content/uploads/2025/05/bgdonate-300x56.jpg 300w, https://hebrew-fos.ilogic-dev.net/wp-content/uploads/2025/05/bgdonate-1024x192.jpg 1024w, https://hebrew-fos.ilogic-dev.net/wp-content/uploads/2025/05/bgdonate-768x144.jpg 768w, https://hebrew-fos.ilogic-dev.net/wp-content/uploads/2025/05/bgdonate-1536x288.jpg 1536w" 
+							sizes="auto, (max-width: 1920px) 100vw, 1920px">
+						<img loading="lazy" 
+							decoding="async" 
+							width="670" 
+							height="360" 
+							src="https://hebrew-fos.ilogic-dev.net/wp-content/uploads/2025/05/Donatefos-1.png" 
+							class="bg_element" 
+							alt="" 
+							style="--bg-e-width-lg: auto; --bg-e-height-lg: 100%; --bg-e-left-lg: 0; --bg-e-right-lg: auto; --bg-e-top-lg: 0; --bg-e-bottom-lg: 0; --bg-e-width-mt: 33.5rem; --bg-e-height-mt: 18rem; --bg-e-left-mt: 0; --bg-e-right-mt: 0; --bg-e-top-mt: 0; --bg-e-bottom-mt: 0; --bg-e-display-mobile: none" 
+							srcset="https://hebrew-fos.ilogic-dev.net/wp-content/uploads/2025/05/Donatefos-1.png 670w, https://hebrew-fos.ilogic-dev.net/wp-content/uploads/2025/05/Donatefos-1-300x161.png 300w" 
+							sizes="auto, (max-width: 670px) 100vw, 670px">
+						<img loading="lazy" 
+							decoding="async" 
+							width="709" 
+							height="609" 
+							src="https://hebrew-fos.ilogic-dev.net/wp-content/uploads/2025/05/Donate-now_image_mobile1-1.png" 
+							class="bg_element" 
+							alt="" 
+							style="--bg-e-width-lg: 70.9rem; --bg-e-height-lg: 60.9rem; --bg-e-left-lg: 0; --bg-e-right-lg: 0; --bg-e-top-lg: 0; --bg-e-bottom-lg: 0; --bg-e-width-mt: 50rem; --bg-e-height-mt: auto; --bg-e-left-mt: 0; --bg-e-right-mt: auto; --bg-e-top-mt: auto; --bg-e-bottom-mt: 0; --bg-e-display-desktop: none" 
+							srcset="https://hebrew-fos.ilogic-dev.net/wp-content/uploads/2025/05/Donate-now_image_mobile1-1.png 709w, https://hebrew-fos.ilogic-dev.net/wp-content/uploads/2025/05/Donate-now_image_mobile1-1-300x258.png 300w" 
+							sizes="auto, (max-width: 709px) 100vw, 709px">
 					</div>
-					<div class="il_section_inner container ib-fullwidth stack-mobile " style="--custom-max-width-ld: var(--site-width);">
-						<div class="il_block_intro align-left " style="">
-							<h2 class="intro_title title-style-1 title-size-2 title-weight-700" style="--title-size-2-ld: 3.6rem;--title-size-2-mt: 25px;--title_margin_bottom_ld: 5rem;--title_margin_bottom_mt: 30px;"><span>Whether helping those most in need or advancing healthcare globally: </span><br>when you support Sheba, you are making a difference.</h2>
+					<div class="il_section_inner container ib-fullwidth stack-mobile" style="--custom-max-width-ld: var(--site-width);">
+						<div class="il_block_intro align-right">
+							<h2 class="intro_title title-style-1 title-size-2 title-weight-700" style="--title-size-2-ld: 3.6rem; --title-size-2-mt: 25px; --title_margin_bottom_ld: 5rem; --title_margin_bottom_mt: 30px;">
+								<span>זה הרבה יותר מתרומה. זו שותפות אמיתית בריפוי.</span><br>
+								הצטרפו לקהילת התורמים שלנו והשפיעו יחד איתנו
+							</h2>
 							<div class="buttons">
-									<a class="il_btn  button-color-green button-hover-color-pink" href="<?php echo $cta_button_link_url; ?>" target="_self"><?php echo $cta_button_link_title; ?></a>
+								<a class="il_btn button-color-green button-hover-color-pink" href="/donate/" target="_self">תירמו עכשיו</a>
 							</div>
-						</div>	
+						</div>
 					</div>
 				</div>
 			</div>
