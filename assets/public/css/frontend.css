@@ -857,6 +857,7 @@ div.margin-xl {
 }
 .blog-main-container .blog-main-container-inner .blog-main-container-bottom-posts article .article-container {
   padding: 18px 24px 36px 24px;
+  text-align: right;
 }
 @media (max-width: 1199.5px) {
   .blog-main-container .blog-main-container-inner .blog-main-container-bottom-posts article .article-container {
