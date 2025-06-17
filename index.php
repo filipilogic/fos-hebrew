@@ -137,7 +137,7 @@ endif;
 															} ?>
 														</p> 
 													</div>
-													<span class="entry_btn">Learn more</span>
+													<span class="entry_btn">קרא עוד</span>
 												</div>
 											</a>
 										</article>
@@ -208,7 +208,7 @@ endif;
 															} ?>
 														</p> 
 													</div>
-													<span class="entry_btn">Learn more</span>
+													<span class="entry_btn">קרא עוד</span>
 												</div>
 											</a>
 										</article>
@@ -304,7 +304,7 @@ endif;
 																} ?>
 															</p> 
 														</div>
-														<span class="entry_btn">Learn more</span>
+														<span class="entry_btn">קרא עוד</span>
 													</div>
 												</a>
 											</article>
