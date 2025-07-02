@@ -10,6 +10,7 @@
     margin: auto;
     width: 90%;
     max-width: 1440px;
+    direction: rtl;
     @include desk-min {
       grid-template-columns: repeat(4, calc(25% - 22.5px));
       grid-template-rows: repeat(2, auto);
@@ -228,7 +229,7 @@
 
       @include limbo-max {
         width: 112%;
-        left: -6%;
+        right: -6%;
       }
       @include desk-min {
         grid-row: 2 / 3;

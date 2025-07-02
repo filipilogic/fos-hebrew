@@ -9136,6 +9136,7 @@ textarea {
   margin: auto;
   width: 90%;
   max-width: 1440px;
+  direction: rtl;
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
@@ -9385,7 +9386,7 @@ textarea {
 @media (max-width: 1199.5px) {
   .il_block.team .il_team_row .member_text {
     width: 112%;
-    left: -6%;
+    right: -6%;
   }
 }
 @media (min-width: 1199.6px) {
