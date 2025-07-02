@@ -303,6 +303,14 @@
         }
 
         &.hp-latest-projects-section {
+            @include desk-min {
+                .il_block_intro {
+                    .intro_title, .intro_text {
+                        width: 50%;
+                        margin-left: auto;
+                    }
+                }
+            }
             .prev-next-container {
                 display: flex;
                 flex-direction: row-reverse;

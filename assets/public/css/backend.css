@@ -2146,6 +2146,12 @@ div.margin-xl {
   content: "flickity";
   display: none;
 }
+@media (min-width: 1199.6px) {
+  .il_block.il_cpt-blog.blog-carousel-enabled.hp-latest-projects-section .il_block_intro .intro_title, .il_block.il_cpt-blog.blog-carousel-enabled.hp-latest-projects-section .il_block_intro .intro_text {
+    width: 50%;
+    margin-left: auto;
+  }
+}
 .il_block.il_cpt-blog.blog-carousel-enabled.hp-latest-projects-section .prev-next-container {
   display: flex;
   flex-direction: row-reverse;
