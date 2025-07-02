@@ -178,3 +178,14 @@
     }
   }
 }
+
+.video-gallery-50-text {
+  @include desk-min {
+    .il_block_intro {
+      .intro_title, .intro_text {
+        width: 50%;
+        margin-left: auto;
+      }
+    }
+  }
+}

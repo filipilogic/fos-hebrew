@@ -10082,6 +10082,13 @@ textarea {
   }
 }
 
+@media (min-width: 1199.6px) {
+  .video-gallery-50-text .il_block_intro .intro_title, .video-gallery-50-text .il_block_intro .intro_text {
+    width: 50%;
+    margin-left: auto;
+  }
+}
+
 .il_video-popup-section {
   padding-top: var(--b-video-popup-space-top-ld);
   padding-bottom: var(--b-video-popup-space-bottom-ld);
