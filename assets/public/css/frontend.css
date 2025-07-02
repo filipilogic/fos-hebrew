@@ -804,6 +804,7 @@ div.margin-xl {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
+  justify-content: flex-end;
 }
 @media (max-width: 479.5px) {
   .blog-main-container .blog-main-container-inner .blog-main-container-bottom-posts {
