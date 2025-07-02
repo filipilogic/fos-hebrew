@@ -591,20 +591,3 @@ function custom_project_select_handler($tag) {
 }
 
 add_action('wpcf7_init', 'custom_add_project_field');
-
-/**
- * Exclude specific categories from the Categories widget
- * Replace the category IDs in the array with the ones you want to exclude
- */
-function exclude_categories_from_widget($args) {
-    // Add category IDs to exclude (replace with your actual category IDs)
-    $exclude_categories = array(15); // Example: exclude a category with ID 15
-    
-    // You can also use category slugs instead of IDs
-    // $exclude_categories = array('uncategorized', 'featured', 'news');
-    
-    $args['exclude'] = $exclude_categories;
-    
-    return $args;
-}
-add_filter('widget_categories_args', 'exclude_categories_from_widget');
