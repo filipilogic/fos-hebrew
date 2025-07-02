@@ -6318,6 +6318,10 @@ main {
   color: #fff !important;
 }
 
+.wp-block-categories-list .cat-item.cat-item-15 {
+  display: none;
+}
+
 .toplevel_page_theme-general-settings .wp-menu-image {
   background-size: 18px !important;
 }

@@ -1768,6 +1768,10 @@ main {
   color: #fff !important;
 }
 
+.wp-block-categories-list .cat-item.cat-item-15 {
+  display: none;
+}
+
 @media (min-width: 1199.6px) {
   .cols-2 .column {
     width: 48.5%;
