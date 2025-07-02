@@ -5637,7 +5637,6 @@ textarea {
   .about-counters-section .il_columns_container .column {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
   }
 }
 .about-counters-section .il_columns_container .column .il_col_text {

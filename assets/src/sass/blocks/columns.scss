@@ -201,7 +201,6 @@
       @include tab-min {
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
       }
       .il_col_text {
         color: var(--color-2);
