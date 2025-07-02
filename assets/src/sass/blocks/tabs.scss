@@ -159,4 +159,11 @@
             margin-right: 0px;
         }
     }
+
+    .frm-button-33 .frm_submit {
+      @include desk-min {
+        width: 33% !important;
+        margin-right: auto !important;
+      }
+    }
 }

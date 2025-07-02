@@ -9106,6 +9106,12 @@ textarea {
 .il_tabs .frm_style_formidable-style .frm_first.horizontal_radio .frm_checkbox:first-child label input[type=checkbox], .il_tabs .frm_style_formidable-style .frm_first.horizontal_radio .frm_radio:first-child label input[type=radio] {
   margin-right: 0px;
 }
+@media (min-width: 1199.6px) {
+  .il_tabs .frm-button-33 .frm_submit {
+    width: 33% !important;
+    margin-right: auto !important;
+  }
+}
 
 .il_block.team {
   padding-top: 10rem;
