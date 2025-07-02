@@ -1763,6 +1763,10 @@ main {
   }
 }
 
+.white-bullets li::marker {
+  color: #fff !important;
+}
+
 @media (min-width: 1199.6px) {
   .cols-2 .column {
     width: 48.5%;

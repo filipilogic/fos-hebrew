@@ -6314,6 +6314,10 @@ main {
   }
 }
 
+.white-bullets li::marker {
+  color: #fff !important;
+}
+
 .toplevel_page_theme-general-settings .wp-menu-image {
   background-size: 18px !important;
 }

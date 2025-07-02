@@ -159,3 +159,10 @@ h6 {
   }
 }
 
+.white-bullets {
+  li {
+    &::marker {
+      color: #fff !important;
+    }
+  }
+}
