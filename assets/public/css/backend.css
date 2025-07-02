@@ -1001,6 +1001,7 @@ div.margin-xl {
   color: var(--color-text);
   font-size: 16px;
   margin-bottom: 3rem;
+  direction: rtl;
 }
 @media (max-width: 1199.5px) {
   .il_block.il_blog-block-section.blog-carousel-disabled .il_inner_posts_container article a .entry-content p {
@@ -2008,6 +2009,7 @@ div.margin-xl {
   color: var(--color-text);
   font-size: 16px;
   margin-bottom: 3rem;
+  direction: rtl;
 }
 @media (max-width: 1199.5px) {
   .il_block.il_cpt-blog.blog-carousel-disabled .il_inner_posts_container article a .entry-content p {
@@ -3765,6 +3767,7 @@ div.margin-xl {
   color: var(--color-text);
   font-size: 16px;
   margin-bottom: 3rem;
+  direction: rtl;
 }
 @media (max-width: 1199.5px) {
   .il_block.il_related-posts .il_inner_posts_container article a .entry-content p {

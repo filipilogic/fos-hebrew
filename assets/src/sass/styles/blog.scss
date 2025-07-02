@@ -66,6 +66,7 @@
                         }
                         .entry-content {
                             margin-top: 1rem;
+                            direction: rtl;
                             @include mob-only {
                                 display: none;
                             }
@@ -191,6 +192,7 @@
                             color: var(--color-text);
                             font-size: 16px;
                             margin-bottom: 3rem;
+                            direction: rtl;
                             @include limbo-max {
                                 margin-bottom: 30px;
                             }
@@ -333,6 +335,7 @@
                             color: var(--color-text);
                             font-size: 16px;
                             margin-bottom: 3rem;
+                            direction: rtl;
                             @include limbo-max {
                                 margin-bottom: 30px;
                             }
