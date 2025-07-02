@@ -155,6 +155,12 @@
             margin-left: 6px;
         }
 
+        .frm_radio label input[type=radio] {
+            &:before {
+                margin: 3.5px !important;
+            }
+        }
+
         .frm_first.horizontal_radio .frm_checkbox:first-child label input[type=checkbox], .frm_first.horizontal_radio .frm_radio:first-child label input[type=radio] {
             margin-right: 0px;
         }

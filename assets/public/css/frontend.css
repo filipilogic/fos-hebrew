@@ -9103,6 +9103,9 @@ textarea {
   margin-right: 10px;
   margin-left: 6px;
 }
+.il_tabs .frm_style_formidable-style .frm_radio label input[type=radio]:before {
+  margin: 3.5px !important;
+}
 .il_tabs .frm_style_formidable-style .frm_first.horizontal_radio .frm_checkbox:first-child label input[type=checkbox], .il_tabs .frm_style_formidable-style .frm_first.horizontal_radio .frm_radio:first-child label input[type=radio] {
   margin-right: 0px;
 }
