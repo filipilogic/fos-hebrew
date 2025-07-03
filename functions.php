@@ -86,10 +86,18 @@ add_action( 'after_setup_theme', 'ilogic_setup' );
  * Enqueue scripts and styles.
  */
 function ilogic_scripts() {
-	wp_enqueue_style( 'ilogic-style', get_stylesheet_uri(), array(), _S_VERSION );
+    // Use filemtime for each file to automatically update version when file changes
 
-	wp_enqueue_style( 'frontend-style', get_template_directory_uri() . '/assets/public/css/frontend.css', array(), _S_VERSION );
-	wp_enqueue_script( 'ilogic-script', get_template_directory_uri() . '/assets/public/js/frontend.js', array('jquery'), _S_VERSION );
+    // style.css (main theme stylesheet)
+    wp_enqueue_style('ilogic-style', get_stylesheet_uri(), [], filemtime(get_stylesheet_directory() . '/style.css'));
+
+    // frontend.css
+    $frontend_css = get_template_directory() . '/assets/public/css/frontend.css';
+    wp_enqueue_style('frontend-style', get_template_directory_uri() . '/assets/public/css/frontend.css', [], filemtime($frontend_css));
+
+    // frontend.js
+    $frontend_js = get_template_directory() . '/assets/public/js/frontend.js';
+    wp_enqueue_script('ilogic-script', get_template_directory_uri() . '/assets/public/js/frontend.js', ['jquery'], filemtime($frontend_js), true);
 
 	wp_enqueue_script( 'fancybox', get_template_directory_uri() . '/assets/public/js/vendor/fancybox.js',array('jquery'),_S_VERSION,true);
 	wp_enqueue_script( 'flickity', get_template_directory_uri() . '/assets/public/js/vendor/flickity.js',array('jquery'),_S_VERSION,true);
