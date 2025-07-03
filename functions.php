@@ -599,3 +599,68 @@ function custom_project_select_handler($tag) {
 }
 
 add_action('wpcf7_init', 'custom_add_project_field');
+
+/**
+ * Format date in Hebrew
+ * This function converts dates to Hebrew format with Hebrew month names
+ */
+function get_hebrew_date($date = null, $format = 'j בF Y') {
+    if (!$date) {
+        $date = get_the_date('Y-m-d');
+    }
+    
+    // Hebrew month names
+    $hebrew_months = array(
+        'January' => 'ינואר',
+        'February' => 'פברואר', 
+        'March' => 'מרץ',
+        'April' => 'אפריל',
+        'May' => 'מאי',
+        'June' => 'יוני',
+        'July' => 'יולי',
+        'August' => 'אוגוסט',
+        'September' => 'ספטמבר',
+        'October' => 'אוקטובר',
+        'November' => 'נובמבר',
+        'December' => 'דצמבר'
+    );
+    
+    // Get the date in English
+    $english_date = date('j F Y', strtotime($date));
+    
+    // Replace English month with Hebrew month
+    foreach ($hebrew_months as $english => $hebrew) {
+        $english_date = str_replace($english, $hebrew, $english_date);
+    }
+    
+    return $english_date;
+}
+
+/**
+ * Alternative: Use WordPress built-in Hebrew localization
+ * This requires Hebrew locale to be installed
+ */
+function get_localized_hebrew_date($date = null) {
+    if (!$date) {
+        $date = get_the_date('Y-m-d');
+    }
+    
+    // Set locale to Hebrew (requires Hebrew locale to be installed)
+    $current_locale = get_locale();
+    
+    // Try to set Hebrew locale
+    if (function_exists('setlocale')) {
+        setlocale(LC_TIME, 'he_IL.UTF-8', 'he_IL', 'he');
+    }
+    
+    // Format date
+    $formatted_date = date_i18n('j בF Y', strtotime($date));
+    
+    // Restore original locale
+    if (function_exists('setlocale')) {
+        setlocale(LC_TIME, $current_locale);
+    }
+    
+    return $formatted_date;
+}
+

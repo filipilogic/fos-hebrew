@@ -70,7 +70,7 @@ endif;
 												<div class="article-container">
 													<header class="entry-header">
 														<h3 class="entry-title"><?php the_title(); ?></h3>
-														<div class="entry-date"><?php echo get_the_date(); ?></div>
+														<div class="entry-date"><?php echo get_hebrew_date(); ?></div>
 													</header>
 													<div class="entry-content">
 														<p>
@@ -125,7 +125,7 @@ endif;
 												?>
 												<div class="article-container">
 													<header class="entry-header">
-														<div class="entry-date"><?php echo get_the_date(); ?></div>
+														<div class="entry-date"><?php echo get_hebrew_date(); ?></div>
 														<h3 class="entry-title"><?php the_title(); ?></h3>
 													</header>
 													<div class="entry-content">
@@ -196,7 +196,7 @@ endif;
 												?>
 												<div class="article-container">
 													<header class="entry-header">
-														<div class="entry-date"><?php echo get_the_date(); ?></div>
+														<div class="entry-date"><?php echo get_hebrew_date(); ?></div>
 														<h3 class="entry-title"><?php the_title(); ?></h3>
 													</header>
 													<div class="entry-content">
@@ -323,7 +323,7 @@ endif;
 													?>
 													<div class="article-container">
 														<header class="entry-header">
-															<div class="entry-date"><?php echo get_the_date(); ?></div>
+															<div class="entry-date"><?php echo get_hebrew_date(); ?></div>
 															<h3 class="entry-title"><?php the_title(); ?></h3>
 														</header>
 														<div class="entry-content">

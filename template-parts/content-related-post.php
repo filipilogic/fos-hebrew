@@ -9,7 +9,7 @@
         <div class="article-container">
             <?php 
 			if( $show_date ) { ?>
-                <div class="entry-date"><?php echo get_the_date(); ?></div>
+                <div class="entry-date"><?php echo get_hebrew_date(); ?></div>
             <?php } ?>
             <header class="entry-header">
                 <h3 class="entry-title"><?php the_title(); ?></h3>
