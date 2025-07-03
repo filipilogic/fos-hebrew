@@ -1084,35 +1084,6 @@
 
 .il_block.tranzila-payment-section {
   .il_section_inner {
-    height: 65rem;
-    align-items: center;
-    @include limbo-max {
-      height: 580px;
-    }
-  }
-  display: flex;
-  @include mob-only {
-    height: calc(100vh - 15rem - 80px);
-  }
-  @include tab-only {
-    height: calc(100vh - 15rem - 59px);
-  }
-  @include limbo-only {
-    height: calc(100vh - 15rem - 59px);
-  }
-  @include desk-min {
-    height: calc(100vh - 11.6rem - 59px);
-  }
-  p {
-    text-align: center;
-    margin-bottom: 0;
-  }
-}
-
-
-
-.il_block.tranzila-payment-section {
-  .il_section_inner {
     .il_block_intro {
       iframe {
         width: 400px;
@@ -1124,6 +1095,10 @@
         @include desk-min {
           height: 410px;
         }
+      }
+      p {
+        text-align: center;
+        margin-bottom: 0;
       }
     }
   }
