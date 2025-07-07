@@ -270,6 +270,7 @@ div.margin-xl {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
+  justify-content: flex-end;
   width: 72%;
 }
 @media (max-width: 1199.5px) {
@@ -308,8 +309,8 @@ div.margin-xl {
   }
 }
 @media (min-width: 479.6px) {
-  .archive-main-container .archive-main-container-inner .archive-main-content .archive-main-content-posts article:nth-child(odd) {
-    margin-right: 6%;
+  .archive-main-container .archive-main-container-inner .archive-main-content .archive-main-content-posts article:nth-child(even) {
+    margin-left: 6%;
   }
   .archive-main-container .archive-main-container-inner .archive-main-content .archive-main-content-posts article:not(:nth-child(1)), .archive-main-container .archive-main-container-inner .archive-main-content .archive-main-content-posts article:not(:nth-child(2)) {
     margin-bottom: 5rem;

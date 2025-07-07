@@ -18,6 +18,7 @@
                 display: flex;
                 flex-wrap: wrap;
                 align-items: stretch;
+                justify-content: flex-end;
                 width: 72%;
                 @include limbo-max{
                     width: 100%;
@@ -46,8 +47,8 @@
                         }
                     }
                     @include tab-min {
-                        &:nth-child(odd) {
-                            margin-right: 6%;
+                        &:nth-child(even) {
+                            margin-left: 6%;
                         }
                         &:not(:nth-child(1)), &:not(:nth-child(2)) {
                             margin-bottom: 5rem;
